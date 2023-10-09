@@ -16,29 +16,29 @@ let finalPassword = [];
 //-of creating input for each prompt that way to create a less "buggy" code
 
 function generatePassword() {
-  var passwordLength = prompt("Please Enter A Number between 8-128 characters");
+  var passwordLength = prompt("Please Enter Number For Password Character Length Between 8-128");
 
   if (passwordLength < 8 || passwordLength > 128) {
     alert('PLEASE ENTER A NUMBER BETWEEN 8-128');
     return
   }
 
-  var specialCharChosen = confirm('CONFIRM SPECIAL CHARACTERS TO USED "!@#$*"');
+  var specialCharChosen = confirm('Confirm *Special Characters* to be used "!@#$*"');
   if (specialCharChosen) {
     userSelection.push(...specialcharacters)
   }
 
-  var numbersChosen = confirm('CONFIRM NUMBERS TO USED "0123456789"');
+  var numbersChosen = confirm('Confirm *Numbers* to be used "0123456789"');
   if (numbersChosen) {
     userSelection.push(...numbers)
   }
 
-  var lowercasechosen = confirm('CONFRIM LOWER CASE LETTERS');
+  var lowercasechosen = confirm('Confirm Lower Case Letters');
   if (lowercasechosen) {
     userSelection.push(...lowercase)
   }
 
-  var uppercasechosen = confirm('CONFRIM UPPER CASE LETTERS');
+  var uppercasechosen = confirm('Confirm Upper Case Letters');
   if (uppercasechosen) {
     userSelection.push(...upperCase)
   }
@@ -55,7 +55,7 @@ function generatePassword() {
   // the solution kept coming out with commas so I had to take them away.
   // this is where I found the reference, but I also found in one activities here
   // "https://javascript.plainenglish.io/how-to-turn-an-array-into-a-string-without-commas-in-javascript-241598bb054b"
-  
+
   var myNewString = finalPassword.join("");
   console.log(myNewString);
 
