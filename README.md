@@ -3,7 +3,7 @@
 ## Description
 
 Just a very basic password generator. You "click" the Generate button and you'll be first asked to select how many characters
-you want you password to be and from there confirm all the choices to build a strong password. 
+you want your password to be and from there confirm all the choices to build a strong password. 
 
 ## Table of Contents 
 
